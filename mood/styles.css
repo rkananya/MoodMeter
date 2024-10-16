@@ -1,0 +1,211 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+/* Header Section */
+.header {
+    background: linear-gradient(135deg, #5D9CEC, #FFC0CB);
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.header p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+.btn{
+    border-radius: 1.25rem;
+    background-color: rgb(218, 210, 216);
+    font-size:20px;
+    padding: 10px 30px;
+}
+.btn:hover{
+    background-color: #700c66;
+    color: white;
+}
+.nav{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  gap:0px;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    box-shadow:0px 10px 12px rgba(70, 63, 68, 0.25);
+    position:fixed;
+    top: 0;
+    width: 100%;
+    color:#f0f0f0;
+    background-color: #46094d;
+    z-index: 1;
+    padding: 10px;
+    gap:50%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  h1{
+    padding:10px 50px;
+  }
+  nav>ul{
+    display: flex;
+    float:right;
+    justify-content: center;
+    align-items: center;
+  }
+  img{
+    border-radius:50% ;
+  }
+  a{
+    text-decoration:none;
+    color: aliceblue;
+    padding: 10px 25px 10px 25px;
+    font-family:Verdana, Geneva, Tahoma, fantansy;
+    font-size: 18px;
+    transition: transform 450ms ease-in-out;
+  }
+  a>li:hover{
+    text-decoration: none;
+    color:rgb(245, 210, 168);
+    zoom: 130%;
+    transition: smooth;
+  }
+
+ 
+/* Features Section */
+.features {
+    padding: 50px 0;
+    background-color: #1f1d1d;
+    color:rgb(96, 2, 85);
+    text-align: center;
+    width:100%;
+
+}
+
+.features h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #e3dbe0;
+}
+
+.feature-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:24px;
+    flex-wrap: wrap;
+}
+
+.feature-item {
+    width: 35%;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    margin-left: 150px;
+}
+
+.feature-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #5D9CEC;
+}
+
+.feature-item p {
+    color: #101010;
+}
+.feature-item:hover {
+  transform: scale(1.075); 
+  transition:all 450ms ease-in-out;
+  background-color: #f9c1f4d2; 
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  .hero {
+    background: linear-gradient(50deg, #bb229a, #71137d);
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    padding: 150px 20px;
+  }
+  .hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  .hero p {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+  .hero .cta-btn {
+    background-color: white;
+    color: #2d292c;
+    padding: 15px 30px;
+    font-size: 26px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  .hero .cta-btn:hover {
+    background-color: rgb(87, 2, 81);
+    color: #f3f3f3;
+    transition: all 450ms ease-in-out;
+  }
+  .cta {
+    text-align: center;
+    background-color: #71137d;
+    color: white;
+    padding: 120px 40px;
+  }
+  .cta h2 {
+    font-size: 25px;
+    margin-bottom: 50px;
+  }
+  .cta .cta-btn {
+    background-color: white;
+    color: #120214;
+    padding: 10px 30px;
+    font-size: 20px;
+    border-radius: 30px;
+    text-decoration: none;
+  }
+  .cta .cta-btn:hover{
+    color: white;
+    background-color: #ce1480;
+    padding: 15px 30px;
+    font-size: 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: all 450ms ease-in-out;
+  }

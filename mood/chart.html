@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood Chart</title>
+    <link rel="stylesheet" href="mood.css">
+    <link rel="icon" type="image/x-icon" href="favicon-32x32.png">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <div class="title">
+		<img id="logopic" src="android-chrome-512x512.png" alt="logo" height="120px" width="120px" >
+		<h2 id="titlehead">MoodMeter</h2>
+	</div>
+    <h1 id="welcome">Welcome to your charts, <span id="username"></span>!</h1>
+
+    <canvas id="myChart" width="400" height="200"></canvas>
+    <script>
+        const username = localStorage.getItem('loggedInUser');
+        if (username) {
+         document.getElementById('username').textContent = username;
+        } else {
+        document.getElementById('username').textContent = 'Guest';
+        }
+        const entries = JSON.parse(localStorage.getItem('entries')) || [];
+        const dates = entries.map(entry => entry.date);
+        const moods = entries.map(entry => {
+            const moodMapping = {
+                "happy": 6,
+                "sad": 5,
+                "anger": 4,
+                "anxious": 3,
+                "neutral": 1,
+                "disgust": 2
+            };
+            return moodMapping[entry.emotion];
+        });
+
+        const ctx = document.getElementById('myChart').getContext('2d');
+        const gradient = ctx.createLinearGradient(0, 0, 0, 400);
+        gradient.addColorStop(0, 'rgb(235, 10, 190,0.7)'); // Starting color
+        gradient.addColorStop(1, 'rgba(113, 19, 125, 0.7)'); // Ending color
+      
+        const moodChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: dates,
+                datasets: [{
+                    label: 'Mood Over Time',
+                    data: moods,
+                    backgroundColor: gradient,
+                    borderColor:'rgba(113, 1, 125, 0.9)',
+                    borderWidth: 1,
+                    fill: true,
+                }]
+            },
+            options: {
+                responsive:true,
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        ticks: {
+                            stepSize: 1,
+                            callback: function(value) {
+                                const moodLabelMapping = {
+                                    1: 'Neutral',
+                                    2: 'Disgust',
+                                    3: 'Anxious',
+                                    4: 'Anger',
+                                    5: 'Sad',
+                                    6: 'Happy'
+                                };
+                                return moodLabelMapping[value];
+                            }
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

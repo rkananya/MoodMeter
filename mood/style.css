@@ -1,0 +1,212 @@
+span {
+    font-size: 48px;
+    position: absolute;
+    top: 0; /* Adjusted to ensure it fits in the corner */
+    left: 0;
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+body {
+    background: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    transition: all 1s;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+p {
+    font-size: 2rem;
+}
+
+.elements {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.emotion {
+    position: relative;
+    width: 12rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    background: transparent;
+    border-radius: 1.5rem;
+}
+
+.emotion:hover {
+    cursor: pointer;
+    background-color: rgb(113, 19, 125);
+    color: #e9defa;
+    border: 1.5px solid #e9defa;
+    transform: scale(1.045);
+    transition: all 450ms;
+    box-shadow: 0px 4px 6px rgba(128, 128, 128, 0.7);
+}
+
+.options {
+    position: relative;
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.quote {
+    padding: 20px;
+    font-size: 1.5rem;
+}
+
+#remedy {
+    display: flex;
+    gap: 12px;
+    font-size: 1.2rem;
+    font-family: Verdana, Geneva, Tahoma, fantasy;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(226, 226, 226, 0.782);
+    padding: 20px;
+    border-radius: 0.75rem;
+    max-width: max-content;
+    transition: all 450ms;
+}
+
+/* Side Panel Styles */
+.sidepanel {
+    background-color: rgba(113, 19, 125, 0.9); /* Match the color theme */
+    color: #fff;
+    overflow-y: auto;
+    transition: left 0.3s ease; /* Smooth transition */
+    z-index: 1000; /* Ensure it's above other content */
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: -300px; /* Initially hidden off-screen */
+    width: 300px;
+    max-width: max-content;
+    height: 100%;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 2rem;
+    background: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+.panel-content {
+    margin-top: 60px; /* Margin to push content down for the close button */
+}
+.panel-content>p{
+    font-size: 18px;
+    align-content: center;
+}
+.chart-btn {
+    background-color:black;
+    color: #fff;
+    border: none;
+    width:100px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+    align-content: center;
+    justify-content: center;
+    padding-left:25px;
+}
+.chart-btn:hover {
+    background-color: #8c2c8a;
+}
+#button{
+    display: flex;
+    flex-wrap: wrap;
+    padding:20px;
+    gap:24px;
+}
+
+/* Toggle Button Styles */
+.toggle-btn {
+    font-size: 2rem;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: rgba(9, 1, 10, 0.9);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    height:40px;
+    width:40px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    transform: translate(-50,-50);
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1000; /* Ensure it's above other content */
+}
+#dataDiv {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.entry {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ed0bc4;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.entry:nth-child(even) {
+    background-color: #ed0d88;
+}
+
+.entry br {
+    margin-bottom: 5px;
+}
+.delete-btn{
+    background-color: black;
+    padding:20px;
+    color:white;
+    width:100px;
+    border-radius: 5px;
+    font-size:1rem;
+    border:none;
+}
+.delete-btn:hover{
+    cursor: pointer;
+    background-color: rgb(235, 10, 190);
+    transition: all 450ms;
+}
+#sidePanel {
+    position: fixed;
+    top: 0;
+    left: -350px; /* Hidden initially */
+    width: 300px;
+    height: 100%;
+    background-color: rgba(113, 19, 125, 0.9);
+    transition: left 0.3s ease;
+}
+a{
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+#welcome{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    gap:12px;
+    padding: 10px;
+    margin: 0;
+    color:#5c0434
+}
+
