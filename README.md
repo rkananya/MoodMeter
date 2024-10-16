@@ -1,7 +1,6 @@
 
 
-### **MoodMeter **
----
+
 
 # MoodMeter
 
