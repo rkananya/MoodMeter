@@ -183,6 +183,11 @@ body {
     transition: all 450ms ease-in-out;
   }
   .cta {
+    display:flex;
+    gap:1.5rem;
+    position: relative;
+    justify-items: center;
+    align-items: center;
     text-align: center;
     background-color: #71137d;
     color: white;
@@ -208,4 +213,8 @@ body {
     border-radius: 30px;
     text-decoration: none;
     transition: all 450ms ease-in-out;
+  }
+  .image{
+    position: relative;
+    left:25%;
   }

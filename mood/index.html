@@ -1,58 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="favicon-32x32.png">
-    <title>MoodMeter</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MoodMeter - Track Your Moods</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="icon" type="image/x-icon" href="favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+
 </head>
 <body>
-    <div class="elements">
-        <h1>MoodMeter</h1><br>
-        <div id="welcome">
-        <h3 >Welcome </h3>
-        <h3 id="username"></h3>
-    </div>
-        <p>How are you feeling today?</p>
-        <div class="options">
-            <button class="emotion" data-emotion="happy">😊 Happy</button>
-            <button class="emotion" data-emotion="sad">😢 Sad</button>
-            <button class="emotion" data-emotion="anger">😡 Anger</button>
-            <button class="emotion" data-emotion="disgust">🤢 Disgust</button>
-            <button class="emotion" data-emotion="anxious">😰 Anxious</button>
-            <button class="emotion" data-emotion="neutral">😐 Neutral</button>
-            
-        <div class="quote" id="quote"></div>
-        <div id="remedy"></div>
-    </div>
-    </div>
-<div class="sidepanel" id="sidePanel">
-    <button class="close-btn" id="closeBtn">&times;</button>
-    <div class="panel-content">
-        <div id="button">
-        <a class="chart-btn" href="chart.html">Chart</a>
-        <button class="delete-btn" onclick="clearAllEntries()">Clear All</button>
-    </div>
-        <p>Your record</p>
-        <div id="data">
-            <ul>
-            </ul>
+  <nav class="navigationBar">
+    <div class="nav">
+    <img src="android-chrome-512x512.png" alt="image" height="100px" width="100px">
+    <h1>MoodMeter</h1>
+  </div>
+    <ul style="list-style-type:none;">
+      <a href="login.html">
+    <button class="btn">Join Us</button>
+    </a>
+    </ul>
+  </nav>
+  <!-- Hero Section -->
+  <section class="hero">
+    <br>
+    <h1>Track Your Moods, Improve Your Mind</h1><br>
+    <p>HealMood helps you track your emotions and understand your mental well-being.</p>
+    <a href="login.html" class="cta-btn">Get Started</a>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features" id="features">
+    <h2>Why Use HealMood?</h2>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 feature-item">
+          <h4><b>Mood Tracking</b></h4>
+          <p>Record your emotions in real-time and see how they change over time.</p>
         </div>
+        <div class="col-md-4 feature-item">
+          <h4><Data><b>Data Visualization</b></h4>
+          <p>Visualize your mood trends with easy-to-understand charts.</p>
+        </div>
+        <div class="col-md-4 feature-item">
+          <h4><b>Personalized Quotes</b></h4>
+          <p>Get inspirational quotes based on your current mood.</p>
+        </div>
+        <div class="col-md-4 feature-item">
+            <h4><b>Continuous growth</b></h4>
+            <p>We are constantly working to enhance your experience. </p>
+          </div>
+      </div>
     </div>
-</div>
+  </section>
 
-<!-- Toggle Button -->
-<span class="toggle-btn" id="toggleBtn">☰</span>
+  <!-- Call to Action Section -->
+  <section class="cta">
+    <div class="image">
+    <h2>Start Tracking Your Moods Today</h2>
+    <a href="login.html" class="cta-btn">Get Started Now</a>
+    </div>
+    <div class="image">
+      <img src="https://media.istockphoto.com/id/1502340962/vector/various-emotions-and-facial-expressions-of-one-person.jpg?s=612x612&w=0&k=20&c=fbqt1lerztyd8sPgh7L3NLyJQb4VxN9Ta94JyLfg9oI=" alt="img" height="350em" width="400em">
+    </div>
+  </section>
 
-<script>
-const username = localStorage.getItem('loggedInUser');
-if (username) {
-  document.getElementById('username').innerHTML = username;
-} else {
-  document.getElementById('username').innerHTML = 'Guest';
-}
-</script>
-<script src="index.js"></script>
 </body>
+<footer>
+    MoodMeter official<br><br>
+    2024
+</footer>
 </html>

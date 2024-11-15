@@ -51,7 +51,7 @@ function login() {
     // Check if the password matches
     if (user.password === password) {
         alert('Login successful. Welcome ' + user.name);
-        window.location.href = "index.html";
+        window.location.href = "home.html";
         localStorage.setItem('loggedInUser', user.name);
     } else {
         alert('Incorrect password');
