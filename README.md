@@ -76,6 +76,20 @@ If you have suggestions or improvements, please fork the repository and submit a
    ```
 5. Open a pull request.
 
+## **ScreenShots**
+1.Landing Page
+![Screenshot 2024-12-24 212932](https://github.com/user-attachments/assets/ce0c73d2-68c2-4d90-8035-3167726ea58a)
+2.Login :
+![Screenshot 2024-12-24 213052](https://github.com/user-attachments/assets/ba92fd59-c34d-4692-a551-e7e86c5bbda6)
+3. Home page:
+![Screenshot 2024-12-24 213118](https://github.com/user-attachments/assets/36a9a4d2-61c5-4730-ba37-6fc14520282a)
+4.Selection:
+![Screenshot 2024-12-24 213141](https://github.com/user-attachments/assets/f23b73bf-0612-41af-8d38-c5261e9b2cd4)
+5.Entries:
+![Screenshot 2024-12-24 213201](https://github.com/user-attachments/assets/fcf64bca-c1a9-4d8e-9a1a-1ae36faac047)
+6.Chart entry:
+![Screenshot 2024-12-24 213215](https://github.com/user-attachments/assets/19369653-363e-45ac-b6cc-9a750b9e3436)
+
 ## **License**
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
